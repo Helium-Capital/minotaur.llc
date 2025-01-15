@@ -78,6 +78,9 @@ tr.mino td {
 }
 
 @media (max-width: 1000px) {
+    h1 {
+        font-size: 30px;
+    }
     blockquote {
         margin-bottom: 25px;
     }
@@ -85,4 +88,12 @@ tr.mino td {
         gap: 10px;
         grid-template-columns: 1fr;
     }
+    .returns {
+        overflow-x: scroll;
+        font-size: 12px;
+    }
+
+    .returns th.name, td.name { min-width: 150px; }
+
+    .returns th.num, td.num { min-width: 75px; }
 }
