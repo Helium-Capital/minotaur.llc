@@ -1,3 +1,9 @@
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #111;
     font-family: sans-serif;
@@ -82,6 +88,7 @@ header nav {
 }
 
 header img {
+    position: relative;
     width: 35px;
     height: 35px;
     vertical-align: middle;
@@ -102,6 +109,7 @@ header a {
 /* main */
 
 main {
+    padding: 0 25px;
     min-height: 70vh;
     text-align: center;
     display: flex;
@@ -257,8 +265,35 @@ tr.mino td {
 }
 
 @media (max-width: 1000px) {
+    h2 {
+        font-size: 36px;
+    }
+    .box p, .box p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    nav img {
+        top: 8px;
+    }
+    nav a {
+        display: none;
+    }
+    main h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    main p {
+        font-size: 17px;
+        line-height: 24px;;
+    }
     .structure .grid {
         gap: 10px;
         grid-template-columns: 1fr;
+    }
+    .performance .flex {
+        flex-direction: column;
+    }
+    .performance .flex .stats {
+        flex-direction: column;
     }
 }
