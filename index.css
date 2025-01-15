@@ -62,6 +62,17 @@ td {
     padding-bottom: 5px !important;
 }
 
+tr.fund td {
+    background: #f6d686;
+    color: black;
+}
+
+tr.mino td {
+    background: #f5c243;
+    color: black;
+    font-weight: bold;
+}
+
 .legal {
     font-size: 11px;
 }
