@@ -25,6 +25,8 @@ h1, .h1 {
 h2, .h2 {
     font-size: 48px;
     line-height: normal;
+    font-weight: bold;
+    margin-bottom: 50px;
 }
 
 h5, .h5 {
@@ -52,10 +54,31 @@ a {
 }
 
 .box {
-    padding: 10%;
+    padding: 7.5%;
     background: rgb(23, 23, 23);
-    border-radius: 16px;;
+    border-radius: 16px;
+    margin: 5%;
 }
+
+.box p, .box p {
+    font-size: 21px;
+    line-height: 34px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px !important;
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: rgba(255,255,255.5);
+}
+
+/* header */
 
 header {
     text-align: center;
@@ -86,6 +109,8 @@ header .container a {
     padding: 15px;
 }
 
+/* main */
+
 main {
     min-height: 70vh;
     text-align: center;
@@ -102,37 +127,25 @@ main h1 span {
     display: block;
 }
 
-.fund .box {
+.fund.box {
     background: url(img/minotaur-crypto.jpg) no-repeat top left;
     background-size: cover;
-}
-
-.fund p {
-    font-size: 21px;
-    line-height: 30px;
-    max-width: 600px;
-}
-
-blockquote {
-    margin-bottom: 50px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px !important;
-    border: 1px solid rgba(255,255,255,.2);
-    color: white;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: rgba(255,255,255.5);
 }
 
 .structure .grid {
     display: grid;
     gap: 50px;
     grid-template-columns: 1fr 1fr;
+}
+
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+.performance.box {
+    background: url(img/graph.jpg) no-repeat top left;
+    background-size: cover;
 }
 
 thead {
@@ -160,22 +173,8 @@ tr.mino td {
 }
 
 @media (max-width: 1000px) {
-    h1 {
-        font-size: 30px;
-    }
-    blockquote {
-        margin-bottom: 25px;
-    }
     .structure .grid {
         gap: 10px;
         grid-template-columns: 1fr;
     }
-    .returns {
-        overflow-x: scroll;
-        font-size: 12px;
-    }
-
-    .returns th.name, td.name { min-width: 150px; }
-
-    .returns th.num, td.num { min-width: 75px; }
 }
