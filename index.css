@@ -2,6 +2,7 @@ html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,13 +65,16 @@ a {
 .btn {
     display: inline-block;
     padding: 10px 20px !important;
-    border: 1px solid rgba(255,255,255,.2);
+    border: 1px solid rgba(255,255,255,.1);
     color: white;
     text-decoration: none;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
 }
 
 .btn:hover {
-    background: rgba(255,255,255.5);
+    background: rgba(0,0,0,.2);
+    border: 1px solid rgba(255,255,255,.3)
 }
 
 /* header */
@@ -172,6 +176,7 @@ main p {
     height: 100%;
     background: url(img/horizon.jpg) no-repeat top left;
     background-size: cover;
+    z-index: 0;
 }
 
 .structure .grid {
@@ -265,8 +270,9 @@ tr.mino td {
 }
 
 @media (max-width: 1000px) {
-    h2 {
-        font-size: 36px;
+    h2, .h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
     }
     .box p, .box p {
         font-size: 18px;
@@ -286,14 +292,31 @@ tr.mino td {
         font-size: 17px;
         line-height: 24px;;
     }
+    .box {
+        background-position: 30% center !important;
+    }
+    .box h2 {
+        margin-top: 10px;
+    }
     .structure .grid {
-        gap: 10px;
+        gap: 50px;
         grid-template-columns: 1fr;
+    }
+    .structure img {
+        margin-bottom: 25px;
+        width: 150px;
+    }
+    .structure ul li {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
     .performance .flex {
         flex-direction: column;
     }
     .performance .flex .stats {
         flex-direction: column;
+    }
+    .legal {
+        margin-top: 100px;
     }
 }
