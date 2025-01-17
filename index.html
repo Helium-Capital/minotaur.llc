@@ -19,9 +19,9 @@
         <div>
             <nav>
                 <img src="img/minotaur-logo.png" alt="Minotaur Crypto Fund" />
+                <a href="#" id="sec">SEC Version</a>
                 <a href="#structure">Structure</a>
                 <a href="#performance">Performance</a>
-                <a href="#team">Team</a>
             </nav>
         </div>
         <div>
@@ -31,7 +31,7 @@
 
     <main>
         <div class="h5">Minotaur Fund</div>
-        <h1>Revolutionizing <span class="grad-text">crypto asset investment</span></h1>
+        <h1 class="sec-hide">Revolutionizing <span class="grad-text">crypto asset investment</span></h1>
         <p>A world-class team of globally-recognized cryptocurrency managers to offer a sophisticated, balanced portfolio approach to cryptocurrency investing.</p>
     </main>
 
@@ -127,7 +127,9 @@
     <a name="contact"></a>
 
     <section class="contact">
-
+        <div class="h2">We're actively planning a third fund and potential coupon arm.</div>
+        <p>Get in touch below to be notified.</p>
+        <div class="h3"><span id="email" class="grad-text"></span></div>
     </section>
 
     <div class="legal">
@@ -181,6 +183,34 @@
 
 
     </div>
+
+<script>
+    const u = "hello";
+    const d = "minotaurfund";
+    const tld = ".com"
+    const email = `${u}@${d}${tld}`;
+    const emailElement = document.getElementById("email");
+    const mailtoLink = document.createElement("a");
+    mailtoLink.href = `mailto:${email}`;
+    mailtoLink.textContent = email;
+    emailElement.appendChild(mailtoLink);
+
+    function loadCSS(filename) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = filename;
+        document.head.appendChild(link);
+        console.log(`CSS file "${filename}" loaded.`);
+    }
+
+    // Attach the function to the link click event
+    document.getElementById('sec').addEventListener('click', function(event) {
+        event.preventDefault();
+        loadCSS('sec.css');
+    });
+
+</script>
 
 </body>
 </html>

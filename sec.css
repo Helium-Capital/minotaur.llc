@@ -1,0 +1,49 @@
+body {
+    background: #fff;
+    color: #000;
+}
+
+.sec-hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.grad-text {
+    background: none;
+    color: black;
+    -webkit-text-fill-color: unset;
+}
+
+.grad-text a {
+    color:black;
+}
+
+main {
+    margin: 2.5%;
+    text-align: left;
+    min-height: unset;
+}
+
+main .h5 {
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+main p {
+    margin: 0;
+}
+
+.box, .fund.box, .different.box, .structure:after, .performance.box {
+    background: none;
+    padding: 25px;
+}
+
+.box p {
+    max-width: 1000px;
+}
+
+.structure img {
+    filter: invert(100);
+    margin-bottom: 35px;
+}
