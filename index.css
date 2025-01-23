@@ -87,8 +87,6 @@ a {
     border: 1px solid rgba(255,255,255,.3)
 }
 
-/* header */
-
 header {
     text-align: center;
     padding: 10px 0 0;
@@ -140,7 +138,7 @@ main h1 {
 @keyframes reduceLetterSpacing {
   from {
     opacity: 0;
-    letter-spacing: 2px; /* Start with wide spacing */
+    letter-spacing: 3px; /* Start with wide spacing */
   }
   to {
     opacity: 1;
@@ -299,11 +297,17 @@ tr.mino td {
         font-size: 18px;
         line-height: 26px;
     }
-    nav img {
-        top: 8px;
+    header {
+        margin: 0 15px;
+    }
+    header img {
+        margin-right: 15px;
     }
     nav a {
         display: none;
+    }
+    nav a#sec {
+        display: inline-block;
     }
     main h1 {
         font-size: 48px;
