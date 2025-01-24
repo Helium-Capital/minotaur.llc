@@ -6,7 +6,7 @@ a,article,aside,audio,b,blockquote,body,canvas,caption,code,dd,del,div,dl,dt,em,
 :root {
 	--blue: #273945;
 	--white: #fff;
-	--black: #161616;
+	--black: #070707;
     --lightgrey: #f0f0f0;
 	--grey: #888;
     --darkergrey: #686868;
@@ -20,6 +20,7 @@ html {
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
+    background: var(--black);
 }
 
 html.enter {
@@ -76,6 +77,10 @@ p {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 25px;
+}
+
+.mb0 {
+    margin-bottom: 0;
 }
 
 a {
@@ -211,49 +216,25 @@ a {
     border: 1px solid white;
 }
 
-header {
-    text-align: center;
-    padding: 15px 50px;
-    background: var(--black);
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-}
-
-header img {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    vertical-align: middle;
-    margin-right: 25px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-header a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-}
-
 /* main */
 
 main {
     padding: 0 50px;
-    min-height: 80vh;
+    min-height: 85vh;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(../img/bg.jpg) no-repeat center center;
+    background: var(--black) url(../img/bg.jpg) no-repeat top center;
     background-size: cover;
     color: white
+}
+
+main .h5 img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    top: 8px;
 }
 
 main h1 {
@@ -430,6 +411,7 @@ main p {
 
 .mechanics {
     padding: 75px 50px;
+    background: white;
 }
 
 .mechanics .grid {
@@ -462,6 +444,7 @@ main p {
 
 .footer {
     padding: 75px 50px;
+    background: var(--lightgrey);
 }
 
 .footer p, .footer li {
@@ -480,30 +463,104 @@ main p {
     list-style-type: disc;
 }
 
-@media (max-width: 1000px) {
-    h2, .h2 {
-        font-size: 32px;
-        margin-bottom: 25px;
+@media (max-width: 1250px) {
+    #modal .container {
+        padding: 25px;
+        margin: 10px;
     }
-    .box p, .box p {
-        font-size: 18px;
-        line-height: 26px;
+    #modal .h3 {
+        font-size: 24px;
+        line-height: 32px;
     }
-    header {
-        margin: 0 15px;
-    }
-    header img {
-        margin-right: 15px;
-    }
-    nav a {
-        display: none;
+    main {
+        background-position: 50px top;
     }
     main h1 {
-        font-size: 48px;
-        line-height: 50px;
+        max-width: 800px;
+        font-size: 54px;
+        line-height: 60px;
     }
     main p {
-        font-size: 17px;
-        line-height: 24px;;
+        font-size: 24px;
+        line-height: 30px;
+        text-wrap: balance;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .different > div:last-child > div, .mechanics .grid > div {
+        padding: 35px 25px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .legal ul {
+        margin-right: 10px;
+    }
+    h2, .h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .btn {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    main {
+        padding: 0 25px;
+        min-height: 90vh;
+    }
+    main h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    main p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    main {
+        background-position: -30px bottom;
+        background-size: 130% auto;
+    }
+    .partners {
+        grid-template-columns: 1fr;
+    }
+    .partners > div:first-child {
+        padding: 25px 25px 0;
+    }
+    .partners > div:last-child {
+        padding: 25px;
+    }
+    .partners .grid {
+        grid-template-columns: 1fr;
+    }
+    .different {
+        padding: 50px 25px;
+    }
+    .different > div:first-child {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .different > div:last-child {
+        grid-template-columns: 1fr;
+    }
+    .quote {
+        background-position: center center;
+    }
+    .quote > div {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .mechanics {
+        padding: 50px 25px;
+    }
+    .mechanics .grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 }
