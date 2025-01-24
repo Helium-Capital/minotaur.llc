@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,205 +12,271 @@
     <meta property="og:type" content="website">
     
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="index.css?v=1.4">
+    <link rel="stylesheet" href="css/index.css?v=1.4">
 </head>
 <body>
+
+    <div id="modal">
+        <div class="container">
+            <div class="h5">LEGAL DISCLAIMER | MINOTAUR FUND II</div>
+
+            <div class="legal">
+                   
+                <p>The sole purpose of this material is to inform, and it in no way is intended to be an offer or solicitation to purchase or sell any security, 
+                    other investment or service, or to attract any Companies or deposits. Investments mentioned may not be appropriate for all clients. Any product 
+                    discussed herein may be purchased only after a client has carefully reviewed the offering document and executed the subscription documents. Minotaur 
+                    Management has not considered the actual or desired investment objectives, goals, guidelines, or factual circumstances of any investor in any Fund(s). 
+                    Before making any investment, each investor should carefully consider the risks associated with the investment, as discussed in the applicable offering document, 
+                    and make a determination based upon their own particular circumstances, that the investment is consistent with their investment objectives and risk tolerance.
+                </p>
+
+                <p>Alternative investments often are speculative and include a high degree of risk. Investors could lose all or a substantial amount of their investment. 
+                    Alternative investments are appropriate only for eligible, long-term investors who are willing to forgo liquidity and put capital at risk for an indefinite 
+                    period of time. They may be highly illiquid and can engage in leverage and other speculative practices that may increase the volatility and risk of loss. 
+                    Alternative Investments typically have higher fees than traditional investments. Investors should carefully review and consider potential risks before investing. 
+                    Certain of these risks may include but are not limited to:
+                </p>
+
+                <ul>
+                    <li>Loss of all or a substantial portion of the investment due to leveraging, short-selling, or other speculative practices</li>
+                    <li>Lack of liquidity in that there may be no secondary market for the Fund </li>
+                    <li>Volatility of returns</li>
+                    <li>Restrictions on transferring interests in the Fund</li>
+                    <li>Potential lack of diversification and resulting higher risk due to concentration of trading authority when a single advisor is utilized</li>
+                    <li>Complex tax structures and delays in tax reporting; Less regulation and higher fees than mutual Funds </li>
+                    <li>Risks associated with the operations, personnel, and processes of the manager and Risks associated with cybersecurity.</li>
+                </ul>
+
+                <p>
+                    As a diversified Fund, Minotaur Management, in the ordinary course of its business engages in activities where Minotaur Management's interests may conflict with the interests of its clients, including this private investment Funds and can give no assurance that conflicts of interest will be resolved in favor of its clients or any such Fund.
+                    All expressions of opinion are subject to change without notice and are not intended to be a forecast of future events or results. Further, This is not a "research report" as defined by FINRA Rule 2241 or a "debt research report" as defined by FINRA Rule 2242 and was not prepared for that reason. 
+                    Certain information contained herein may constitute forward-looking statements. Due to various risks and uncertainties, actual events, results or the performance of a Fund may differ materially from those reflected or contemplated in such forward-looking statements. Clients should carefully consider the investment objectives, risks, charges, and expenses of a Fund before investing.
+                </p>
+
+                <p>
+                    “Sub Funds” ei. Crypto Yield Capital, Eagle Digital Resources, or Event Horizon Capital-Crypto EQ are unmanaged by Minotaur Management and investors cannot directly 
+                    invest in them. They are not subject to expenses or fees and are are comprised of private funds or limited partnerships. A particular investment product may consist 
+                    of securities significantly different than those in any index referred to herein. Composite index results are shown for illustrative purposes only, generally do not 
+                    represent the performance of a specific investment, may not, for a variety of reasons, be an appropriate comparison or benchmark for a particular investment and may 
+                    not necessarily reflect the actual investment strategy or objective of a particular investment. Consequently, comparing an investment to a particular sub fund may be 
+                    of limited use.
+                </p>
+
+                <p>
+                    THE INTERESTS HAVE NOT BEEN, AND ARE NOT EXPECTED TO BE, REGISTERED UNDER THE SECURITIES ACT OF 1933, AS AMENDED, OR UNDER ANY APPLICABLE STATE SECURITIES LAWS, NOR HAVE SUCH INTERESTS BEEN APPROVED OR DISAPPROVED BY THE UNITED STATES SECURITIES AND EXCHANGE COMMISSION (THE “SEC”) OR THE SECURITIES REGULATORY AUTHORITY OF ANY STATE OR OTHER JURISDICTION. NEITHER THE SEC NOR ANY OTHER REGULATORY AUTHORITY OF ANY JURISDICTION HAS PASSED UPON THE ACCURACY OR ADEQUACY OF THIS PRESENTATION, AND ANY REPRESENTATION TO THE CONTRARY IS UNLAWFUL. 
+        PAST PERFORMANCE DOES NOT GUARANTEE FUTURE RESULTS. THERE CAN BE NO GUARANTEE THAT THE HEDGE FUND’S INVESTMENT OBJECTIVES WILL BE ACHIEVED, AND THE INVESTMENT RESULTS MAY VARY SUBSTANTIALLY FROM YEAR TO YEAR OR EVEN FROM MONTH TO MONTH. AS A RESULT, AN INVESTOR COULD LOSE ALL OR A SUBSTANTIAL AMOUNT OF ITS INVESTMENT. IN ADDITION, MINOTAUR MANAGEMENT’S FUND FEES AND EXPENSES MAY OFFSET ITS PROFITS. GROSS RETURNS ARE CALCULATED BASED UPON AN INVESTMENT MADE AT INCEPTION, FOR WHICH NO REDEMPTIONS HAVE BEEN MADE. RETURNS AMONG LPS MAY VARY DUE TO THE PARTICULAR CIRCUMSTANCES OF THE LP, INCLUDING, WITHOUT LIMITATION, THE FEEDER FUND IN WHICH THE LP IS INVESTED, DATE OF INVESTMENT, REDEMPTIONS MADE AND EXPOSURE TO SIDE POCKETS. INVESTOR EXPOSURE TO SIDE POCKETS MAY VARY BASED UPON ALLOCATION, RELATIVE CONCENTRATION AND TIME OF INVESTMENT. 
+                </p>
+
+            </div>
+
+            <div class="h3">Are you an accredited investor?</div>
+            
+            <div class="buttons">
+                <button id="confirm">Yes</button>
+                <button id="deny">No</button>
+            </div>
+        </div>
+        
+    </div>
+
     <header>
         <div>
             <nav>
                 <img src="img/minotaur-logo.png" alt="Minotaur Crypto Fund" />
-                <a href="#" id="sec">SEC Version</a>
-                <a href="#structure">Structure</a>
-                <a href="#performance">Performance</a>
             </nav>
         </div>
         <div>
-            <a class="btn" href="#contact">Contact</a>
+            <!-- <a class="btn" href="#contact">Contact</a> -->
         </div> 
     </header>
 
     <main>
         <div class="h5">Minotaur Fund</div>
-        <h1 class="sec-hide">Revolutionizing <span class="grad-text">crypto asset investment</span></h1>
-        <p>A world-class team of globally-recognized cryptocurrency managers to offer a sophisticated, balanced portfolio approach to cryptocurrency investing.</p>
+        <h1 class="sec-hide">Professional &amp; responsible crypto asset investment</h1>
+        <p>We are a 503b &amp; 504c SEC-registered fund custodianed by on-shore American MBAs using American Banks and well-known third party CPAs &amp; attorneys.</p>
+    
+        <p><a href="#more" class="btn">Learn more &#8600;</a></p>
     </main>
 
-    <section class="fund box">
+    <a name="more"></a>
 
-        <h2>What is Minotaur?</h2>
-        <p>
-            Minotaur Fund II is a private company with evergreen monthly subscriptions focused on investing in 3 private funds concentrated in 
-            3 distinct zones of the crypto industry with a focus on quarterly distributions and capital appreciation. 
-        </p>
-        <p>
-            Fund II has identified 3 
-            levels of risk in the space and is attempting to blend their risk factors with their respective returns in a diversified strategy to 
-            bring a competitive edge in an ever-expanding market. 
-        </p>
+    <section class="partners">
 
-    </section>
-
-    <section class="different box">
-
-        <h2>How we are different</h2>
-        <p>
-            We utilize a bespoke algorithm-based investment platform focused on digital store of value, general purpose smart contracts, decentralized finance, and utility tokens.
-        </p>
-        <p>
-            We have a research-based, actively managed portfolio of smart contract protocols, open finance, and web 3 assets
-        </p>
-
-    </section>
-
-    <a name="structure"></a>
-
-    <section class="structure box">
-
-        <div class="h2">
-            Fund II Structure
+        <div>
+            <div class="h5">Trusted Partners</div>
+            <h2>We've partnered with world-class auditors, assessors, and attorneys and report quarterly to the SEC.</h2>
         </div>
 
         <div class="grid">
-
-            <blockquote class="horizon">
-                <img src="img/event-horizon.png" />
-                <h3>EVENT HORIZON CAPITAL (LLC)</h3>
-                <p>EHC is an algorithm-based investment platform focused on digital store of value, general purpose smart contracts, decentralized finance, and utility tokens </p>
-                <ul>
-                    <li>$3MM Capital Raise</li>
-                    <li>Risk Designation: High</li>
-                    <li>Representing 30% of Fund II</li>
-                </ul>
-            </blockquote>
-
-            <blockquote class="yield">
-                <img src="img/crypto-yield.png" />
-                <h3>CRYPTO YIELD CAPITAL (LP)</h3>
-                <p>CYC is a research-based, actively managed hedge fund that predominantly invests in smart contract protocols, open finance, and Web 3 assets before these assets are listed publicly </p>
-                <ul>
-                    <li>$4MM Capital Raise</li>
-                    <li>Risk Designation: High</li>
-                    <li>Representing 40% of Fund II</li>
-                </ul>
-            </blockquote>
-
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>Desroches Partners</h3>
+                    <span>CPA</span>
+                </div>
+            </div>
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>Rapp &amp; Krock</h3>
+                    <span>Attorneys</span>
+                </div>
+            </div>
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>Fireblocks</h3>
+                    <span>Security Audit</span>
+                </div>
+            </div>
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>TradeStation</h3>
+                    <span>Custodians</span>
+                </div>
+            </div>
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>Michael Coglianese</h3>
+                    <span>Tax Audit</span>
+                </div>
+            </div>
+            <div class="partner wait">
+                <div class="inner">
+                    <h3>CBIG Law</h3>
+                    <span>Attorneys</span>
+                </div>
+            </div>
         </div>
 
     </section>
 
-    <a name="performance"></a>
+    <section class="different">
 
-    <section class="performance box">
-
-        <div class="flex">
-
+        <div>
             <div>
-                 <div class="h2">Fund II Performance</div>
-                <p>Using our proprietary algorithm from Q3 of 2022 to Q1 of 2024, Minotaur outperformed Bitcoin's rate of return by nearly 100%. </p>
+                <div class="h5">Minotaur Strategy</div>
+                <h2>Traditional Finance Strategy Applied to the Crypto Market</h2>
             </div>
-
-            <div class="stats">
-                <div class="stat">
-                    175.7%
-                    <span>Bitcoin</span>
-                </div>
-                <div class="stat minotaur">
-                    <strong>283.5%</strong>
-                    <span>Minotaur Fund II</span>
-                </div>
+            
+            <div>
+                <p>We employ traditional finance strategies in the securities market to the crypto market through market-making asset-based lending and transaction services</p>
+                <p><strong>We have a proven track record</strong>. 5 years of historical wins, particularly during the last bear market.</p>
             </div>
-
+            
         </div>
         
+        <div class="sausage">
+            <div class="wait">
+                <strong>We are NOT BOT TRADERS</strong>, our fund is actively managed by the best MBAs in Texas.
+            </div>
+            <div class="wait">
+                We invest in tokens with economic logics, <strong>backed by a cash flowing strategy</strong>
+            </div>
+            <div class="wait">
+                We act as the brokers and pass along the <strong>3-4% savings to our investors</strong>
+            </div>
+        </div>
+
     </section>
 
-    <a name="contact"></a>
+    <section class="quote">
+        <div>
+            “Through our partnership with Minotaur, we have seen <span>significant lift in the customers we recover, with each customer translating 
+            to 2x more revenue</span>. When saving a customer from involuntary churn, their LTV also increases because they will have subsequent 
+            orders with you. This LTV extension is huge.”
+        </div>
 
-    <section class="contact">
-        <div class="h2">We're actively planning a third fund and potential coupon arm.</div>
-        <p>Get in touch below to be notified.</p>
-        <div class="h3"><span id="email" class="grad-text"></span></div>
+        <div class="author">
+            <img loading="lazy" width="70" alt="" class="img" src="https://cdn.prod.website-files.com/6570760e6e7b5aa59f8f2452/6582d87b9c585878734cff6b_ava2.avif">
+            <div class="text">
+                <p class="name">
+                    Justin Bersuder
+                </p>
+                <p class="title">
+                    Vice President of product AT curology
+                </p>
+            </div>
+        </div>
+
     </section>
 
-    <div class="legal">
-        <div class="h5">LEGAL DISCLAIMER | MINOTAUR FUND II</div>
+    <section class="mechanics">
+        <div class="h5">Investor Requirements</div>
+        <div class="h2">Minotaur Fund Fees &amp; Terms</div>
 
-        
-            <p>The sole purpose of this material is to inform, and it in no way is intended to be an offer or solicitation to purchase or sell any security, 
-                other investment or service, or to attract any Companies or deposits. Investments mentioned may not be appropriate for all clients. Any product 
-                discussed herein may be purchased only after a client has carefully reviewed the offering document and executed the subscription documents. Minotaur 
-                Management has not considered the actual or desired investment objectives, goals, guidelines, or factual circumstances of any investor in any Fund(s). 
-                Before making any investment, each investor should carefully consider the risks associated with the investment, as discussed in the applicable offering document, 
-                and make a determination based upon their own particular circumstances, that the investment is consistent with their investment objectives and risk tolerance.
-            </p>
+        <div class="grid">
+            <div>
+                <h4 class="h5">Minimum Investment</h4>
+                <p><strong>$200,000</strong></p>
+            </div>
+            <div>
+                <h4 class="h5">Waterfall</h4>
+                <p>
+                    <strong>Initial Split 70% LP / 30% GP</strong><br />
+                    <strong>2X MOIC 50% LP / 50% GP</strong><br />
+                    <strong>3X MOIC 30% LP / 70% GP</strong>
+                </p>
+            </div>
+            <div>
+                <h4 class="h5">Fees</h4>
+                <p>
+                    <strong>2% Mgmt. Fee on Gross Rev</strong>
+                    <strong>Evergreen Subscription with 12 month Lock up Period.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <p>Alternative investments often are speculative and include a high degree of risk. Investors could lose all or a substantial amount of their investment. 
-                Alternative investments are appropriate only for eligible, long-term investors who are willing to forgo liquidity and put capital at risk for an indefinite 
-                period of time. They may be highly illiquid and can engage in leverage and other speculative practices that may increase the volatility and risk of loss. 
-                Alternative Investments typically have higher fees than traditional investments. Investors should carefully review and consider potential risks before investing. 
-                Certain of these risks may include but are not limited to:
-            </p>
+    <section class="footer">
 
-            <ul>
-                <li>Loss of all or a substantial portion of the investment due to leveraging, short-selling, or other speculative practices</li>
-                <li>Lack of liquidity in that there may be no secondary market for the Fund </li>
-                <li>Volatility of returns</li>
-                <li>Restrictions on transferring interests in the Fund</li>
-                <li>Potential lack of diversification and resulting higher risk due to concentration of trading authority when a single advisor is utilized</li>
-                <li>Complex tax structures and delays in tax reporting; Less regulation and higher fees than mutual Funds </li>
-                <li>Risks associated with the operations, personnel, and processes of the manager and Risks associated with cybersecurity.</li>
-            </ul>
+        <h5>Legal Disclaimer</h5>
+                   
+                <p>The sole purpose of this material is to inform, and it in no way is intended to be an offer or solicitation to purchase or sell any security, 
+                    other investment or service, or to attract any Companies or deposits. Investments mentioned may not be appropriate for all clients. Any product 
+                    discussed herein may be purchased only after a client has carefully reviewed the offering document and executed the subscription documents. Minotaur 
+                    Management has not considered the actual or desired investment objectives, goals, guidelines, or factual circumstances of any investor in any Fund(s). 
+                    Before making any investment, each investor should carefully consider the risks associated with the investment, as discussed in the applicable offering document, 
+                    and make a determination based upon their own particular circumstances, that the investment is consistent with their investment objectives and risk tolerance.
+                </p>
 
-            <p>
-                As a diversified Fund, Minotaur Management, in the ordinary course of its business engages in activities where Minotaur Management's interests may conflict with the interests of its clients, including this private investment Funds and can give no assurance that conflicts of interest will be resolved in favor of its clients or any such Fund.
-                All expressions of opinion are subject to change without notice and are not intended to be a forecast of future events or results. Further, This is not a "research report" as defined by FINRA Rule 2241 or a "debt research report" as defined by FINRA Rule 2242 and was not prepared for that reason. 
-                Certain information contained herein may constitute forward-looking statements. Due to various risks and uncertainties, actual events, results or the performance of a Fund may differ materially from those reflected or contemplated in such forward-looking statements. Clients should carefully consider the investment objectives, risks, charges, and expenses of a Fund before investing.
-            </p>
+                <p>Alternative investments often are speculative and include a high degree of risk. Investors could lose all or a substantial amount of their investment. 
+                    Alternative investments are appropriate only for eligible, long-term investors who are willing to forgo liquidity and put capital at risk for an indefinite 
+                    period of time. They may be highly illiquid and can engage in leverage and other speculative practices that may increase the volatility and risk of loss. 
+                    Alternative Investments typically have higher fees than traditional investments. Investors should carefully review and consider potential risks before investing. 
+                    Certain of these risks may include but are not limited to:
+                </p>
 
-            <p>
-                “Sub Funds” ei. Crypto Yield Capital, Eagle Digital Resources, or Event Horizon Capital-Crypto EQ are unmanaged by Minotaur Management and investors cannot directly 
-                invest in them. They are not subject to expenses or fees and are are comprised of private funds or limited partnerships. A particular investment product may consist 
-                of securities significantly different than those in any index referred to herein. Composite index results are shown for illustrative purposes only, generally do not 
-                represent the performance of a specific investment, may not, for a variety of reasons, be an appropriate comparison or benchmark for a particular investment and may 
-                not necessarily reflect the actual investment strategy or objective of a particular investment. Consequently, comparing an investment to a particular sub fund may be 
-                of limited use.
-            </p>
+                <ul>
+                    <li>Loss of all or a substantial portion of the investment due to leveraging, short-selling, or other speculative practices</li>
+                    <li>Lack of liquidity in that there may be no secondary market for the Fund </li>
+                    <li>Volatility of returns</li>
+                    <li>Restrictions on transferring interests in the Fund</li>
+                    <li>Potential lack of diversification and resulting higher risk due to concentration of trading authority when a single advisor is utilized</li>
+                    <li>Complex tax structures and delays in tax reporting; Less regulation and higher fees than mutual Funds </li>
+                    <li>Risks associated with the operations, personnel, and processes of the manager and Risks associated with cybersecurity.</li>
+                </ul>
 
-            <p>
-                THE INTERESTS HAVE NOT BEEN, AND ARE NOT EXPECTED TO BE, REGISTERED UNDER THE SECURITIES ACT OF 1933, AS AMENDED, OR UNDER ANY APPLICABLE STATE SECURITIES LAWS, NOR HAVE SUCH INTERESTS BEEN APPROVED OR DISAPPROVED BY THE UNITED STATES SECURITIES AND EXCHANGE COMMISSION (THE “SEC”) OR THE SECURITIES REGULATORY AUTHORITY OF ANY STATE OR OTHER JURISDICTION. NEITHER THE SEC NOR ANY OTHER REGULATORY AUTHORITY OF ANY JURISDICTION HAS PASSED UPON THE ACCURACY OR ADEQUACY OF THIS PRESENTATION, AND ANY REPRESENTATION TO THE CONTRARY IS UNLAWFUL. 
-    PAST PERFORMANCE DOES NOT GUARANTEE FUTURE RESULTS. THERE CAN BE NO GUARANTEE THAT THE HEDGE FUND’S INVESTMENT OBJECTIVES WILL BE ACHIEVED, AND THE INVESTMENT RESULTS MAY VARY SUBSTANTIALLY FROM YEAR TO YEAR OR EVEN FROM MONTH TO MONTH. AS A RESULT, AN INVESTOR COULD LOSE ALL OR A SUBSTANTIAL AMOUNT OF ITS INVESTMENT. IN ADDITION, MINOTAUR MANAGEMENT’S FUND FEES AND EXPENSES MAY OFFSET ITS PROFITS. GROSS RETURNS ARE CALCULATED BASED UPON AN INVESTMENT MADE AT INCEPTION, FOR WHICH NO REDEMPTIONS HAVE BEEN MADE. RETURNS AMONG LPS MAY VARY DUE TO THE PARTICULAR CIRCUMSTANCES OF THE LP, INCLUDING, WITHOUT LIMITATION, THE FEEDER FUND IN WHICH THE LP IS INVESTED, DATE OF INVESTMENT, REDEMPTIONS MADE AND EXPOSURE TO SIDE POCKETS. INVESTOR EXPOSURE TO SIDE POCKETS MAY VARY BASED UPON ALLOCATION, RELATIVE CONCENTRATION AND TIME OF INVESTMENT. 
-            </p>
+                <p>
+                    As a diversified Fund, Minotaur Management, in the ordinary course of its business engages in activities where Minotaur Management's interests may conflict with the interests of its clients, including this private investment Funds and can give no assurance that conflicts of interest will be resolved in favor of its clients or any such Fund.
+                    All expressions of opinion are subject to change without notice and are not intended to be a forecast of future events or results. Further, This is not a "research report" as defined by FINRA Rule 2241 or a "debt research report" as defined by FINRA Rule 2242 and was not prepared for that reason. 
+                    Certain information contained herein may constitute forward-looking statements. Due to various risks and uncertainties, actual events, results or the performance of a Fund may differ materially from those reflected or contemplated in such forward-looking statements. Clients should carefully consider the investment objectives, risks, charges, and expenses of a Fund before investing.
+                </p>
 
+                <p>
+                    “Sub Funds” ei. Crypto Yield Capital, Eagle Digital Resources, or Event Horizon Capital-Crypto EQ are unmanaged by Minotaur Management and investors cannot directly 
+                    invest in them. They are not subject to expenses or fees and are are comprised of private funds or limited partnerships. A particular investment product may consist 
+                    of securities significantly different than those in any index referred to herein. Composite index results are shown for illustrative purposes only, generally do not 
+                    represent the performance of a specific investment, may not, for a variety of reasons, be an appropriate comparison or benchmark for a particular investment and may 
+                    not necessarily reflect the actual investment strategy or objective of a particular investment. Consequently, comparing an investment to a particular sub fund may be 
+                    of limited use.
+                </p>
 
-    </div>
+                <p>
+                    THE INTERESTS HAVE NOT BEEN, AND ARE NOT EXPECTED TO BE, REGISTERED UNDER THE SECURITIES ACT OF 1933, AS AMENDED, OR UNDER ANY APPLICABLE STATE SECURITIES LAWS, NOR HAVE SUCH INTERESTS BEEN APPROVED OR DISAPPROVED BY THE UNITED STATES SECURITIES AND EXCHANGE COMMISSION (THE “SEC”) OR THE SECURITIES REGULATORY AUTHORITY OF ANY STATE OR OTHER JURISDICTION. NEITHER THE SEC NOR ANY OTHER REGULATORY AUTHORITY OF ANY JURISDICTION HAS PASSED UPON THE ACCURACY OR ADEQUACY OF THIS PRESENTATION, AND ANY REPRESENTATION TO THE CONTRARY IS UNLAWFUL. 
+        PAST PERFORMANCE DOES NOT GUARANTEE FUTURE RESULTS. THERE CAN BE NO GUARANTEE THAT THE HEDGE FUND’S INVESTMENT OBJECTIVES WILL BE ACHIEVED, AND THE INVESTMENT RESULTS MAY VARY SUBSTANTIALLY FROM YEAR TO YEAR OR EVEN FROM MONTH TO MONTH. AS A RESULT, AN INVESTOR COULD LOSE ALL OR A SUBSTANTIAL AMOUNT OF ITS INVESTMENT. IN ADDITION, MINOTAUR MANAGEMENT’S FUND FEES AND EXPENSES MAY OFFSET ITS PROFITS. GROSS RETURNS ARE CALCULATED BASED UPON AN INVESTMENT MADE AT INCEPTION, FOR WHICH NO REDEMPTIONS HAVE BEEN MADE. RETURNS AMONG LPS MAY VARY DUE TO THE PARTICULAR CIRCUMSTANCES OF THE LP, INCLUDING, WITHOUT LIMITATION, THE FEEDER FUND IN WHICH THE LP IS INVESTED, DATE OF INVESTMENT, REDEMPTIONS MADE AND EXPOSURE TO SIDE POCKETS. INVESTOR EXPOSURE TO SIDE POCKETS MAY VARY BASED UPON ALLOCATION, RELATIVE CONCENTRATION AND TIME OF INVESTMENT. 
+                </p>
 
-<script>
-    const u = "hello";
-    const d = "minotaurfund";
-    const tld = ".com"
-    const email = `${u}@${d}${tld}`;
-    const emailElement = document.getElementById("email");
-    const mailtoLink = document.createElement("a");
-    mailtoLink.href = `mailto:${email}`;
-    mailtoLink.textContent = email;
-    emailElement.appendChild(mailtoLink);
+    </section>
 
-    function loadCSS(filename) {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = filename;
-        document.head.appendChild(link);
-        console.log(`CSS file "${filename}" loaded.`);
-    }
-
-    // Attach the function to the link click event
-    document.getElementById('sec').addEventListener('click', function(event) {
-        event.preventDefault();
-        loadCSS('sec.css');
-    });
-
-</script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
