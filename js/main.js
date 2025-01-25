@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			event.preventDefault();
 			event.stopPropagation();
 			wrapper.classList.add('enter');
+            window.localStorage.setItem("investor", "yes");
 		}
         if (event.target.matches('#deny')) {
 			event.preventDefault();
