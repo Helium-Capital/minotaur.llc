@@ -480,6 +480,11 @@ main p {
 .contact {
     padding: 50px;
     background: var(--lightgrey);
+}
+
+.contact .container {
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
     gap: 200px;
     grid-template-columns: 30% 70%;
