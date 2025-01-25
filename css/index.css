@@ -481,8 +481,12 @@ main p {
     padding: 50px;
     background: var(--lightgrey);
     display: grid;
-    gap: 100px;
+    gap: 200px;
     grid-template-columns: 30% 70%;
+}
+
+.hbspt-form {
+    max-width: 400px;
 }
 
 .footer {
