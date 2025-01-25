@@ -222,6 +222,7 @@ a {
     text-decoration: none;
     font-size: 24px;
     transition: all .5s ease-in-out;
+    text-shadow: none;
 }
 
 .btn:after {
@@ -284,6 +285,11 @@ main p {
     grid-template-columns: 40% 60%;
     padding: 75px 0 50px;
     background: var(--lightgrey);
+}
+
+.partners .btn {
+    margin-top: 50px;
+    filter: invert(1);
 }
 
 .partners > div:first-child {
@@ -471,9 +477,18 @@ main p {
     margin-bottom: 0;
 }
 
+.contact {
+    padding: 50px;
+    background: var(--lightgrey);
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 30% 70%;
+}
+
 .footer {
     padding: 75px 50px;
-    background: var(--lightgrey);
+    background: var(--black);
+    color: white;
 }
 
 .footer p, .footer li {
@@ -595,5 +610,9 @@ main p {
     .mechanics .grid {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }
