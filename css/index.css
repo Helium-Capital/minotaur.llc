@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
 a,article,aside,audio,b,blockquote,body,canvas,caption,code,dd,del,div,dl,dt,em,embed,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,label,legend,li,menu,nav,object,ol,p,pre,s,section,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,tr,u,ul,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}.screen-reader-text{display:none}
 *{outline: none;box-sizing:border-box;-webkit-overflow-scrolling: touch;-webkit-font-smoothing: antialiased;position: relative;}
-
-@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
 	--blue: #273945;
@@ -270,7 +270,7 @@ main h1 {
 }
 
 main p {
-    max-width: 700px;
+    max-width: 750px;
     font-size: 28px;
     line-height: 38px;
     opacity: .8;
@@ -298,11 +298,6 @@ main p {
 
 .partners > div:last-child {
     padding: 50px;
-}
-
-.partners p {
-    margin: 0 auto;
-    max-width: 700px;
 }
 
 .partners .grid {
